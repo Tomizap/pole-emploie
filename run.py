@@ -5,7 +5,7 @@ class AutoApply:
 
     def __init__(self, s):
         super(AutoApply, self).__init__()
-        self.pole_emploie = PoleEmploie(s, name="linkedin")
+        self.pole_emploie = PoleEmploie(s)
 
     def start(self):
         self.pole_emploie.application_loop()
