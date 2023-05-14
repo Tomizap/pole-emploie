@@ -1,4 +1,4 @@
-from pole_emploie import PoleEmploie
+from poleemploie import PoleEmploie
 
 
 class AutoApply:
