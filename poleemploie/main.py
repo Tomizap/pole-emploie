@@ -9,10 +9,10 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-class PoleEmploie(threading.Thread):
+class PoleEmploie:
 
     def __init__(self, setting):
-        super(PoleEmploie, self).__init__()
+        super().__init__()
         self.setting = setting
         self.user = setting['user']
         self.keywords = self.setting['inputs']['keywords']
