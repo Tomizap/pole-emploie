@@ -11,8 +11,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 class PoleEmploie(threading.Thread):
 
-    def __init__(self, setting, name=None):
-        super(PoleEmploie, self).__init__(name=name)
+    def __init__(self, setting):
+        super(PoleEmploie, self).__init__()
         self.setting = setting
         self.user = setting['user']
         self.keywords = self.setting['inputs']['keywords']
